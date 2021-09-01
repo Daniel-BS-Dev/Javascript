@@ -8,19 +8,29 @@
     <style>
         body {
            background-color: rgba(158, 111, 202, 0.25);
-           font: normal, arial, 20px;
+           font: normal, arial, 20px; /* comment in css */
            color:black;
         }
     </style>
 </head>
 <body>
-     <h1>óla, mundo</h1>
+     <h1>óla, mundo</h1> <!--comment in htlm-->
      <p>já me livrei da maldição</p>
 
      <script>
-         alert('minha primeira mensagem');
-         confirm('Está gostando de js');
-         prompt('Qual é seu nome?');
+         
+        var name = prompt('What is your name?');  // comment in javascript
+             document.write(`Nice to meet you ${name.length} <br />`);  // escreve na tela
+             document.write(name.toUpperCase());
+        
+        var number1 = Number.parseFloat(prompt('Enter number 1')); // int
+        var number2 = Number.parseFloat(prompt('Enter number2')); // float
+                     //sum.toString()  or String(sum)
+        var sum = number1 + number2;
+                   alert(`Sum between ${number1} and ${number2} it is ${sum} `)
+                   alert(sum.toFixed(2).replace(',', '.')); // colocar 2 casa dps da vigula e trocar a vrigula pelo numero
+                   alert(sum.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}));
+
      </script>
 </body>
 </html>
