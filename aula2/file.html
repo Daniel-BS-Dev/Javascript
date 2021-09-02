@@ -17,13 +17,13 @@
     <h1>Iniciando os estudos</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
-     <div class="m">Clique em mim</div>
-     <div class="msg">Clique em mim</div>
+     <div>Clique em mim</div>
+     <div name="msg">Clique em mim</div>
 
      <script>
          // por marca
          var corpo = window.document.body; // varialvel
-         var p1 = window.document.getElementsByTagName('p')[0] // variavel
+         var p1 = window.document.getElementsByTagName('p')[1] // variavel
          window.document.write(p1.innerText); // reescrevendo o primeiro paragrafo
          p1.style.color = 'blue'  // mudando a cor para azul
          corpo.style.background = 'black' // mudando a cor para preto
@@ -34,7 +34,7 @@
        // d.style.background = 'green';
 
         //por name
-        var d = window.document.getElementsByName('msg');
+        var d = document.getElementsByName('msg')[0]
         d.innerText = "Olá!";
 
         //por selector
