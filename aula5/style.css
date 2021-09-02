@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(49, 82, 112);
+    margin: 0px;
+    padding: 0px;
+}
+
+article{
+    width: 500px;
+    background-color: white;
+    border-radius: 7px;
+    margin:auto;
+    margin-top: 50px;
+    box-shadow: 10px 20px 30px #000;
+    
+}
+
+h1{
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+section{
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+#textYear{
+    width: 100px;
+    border: 1px solid #150341;
+}
+
+.button{
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    background-color:#150341 ;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#res{
+    padding-left: 7px;
+    padding-bottom: 10px;
+    display: block;
+    padding-bottom: 20px;
+}
